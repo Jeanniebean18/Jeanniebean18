@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<head>
-  <title>Jeannie North</title>
-  
-  <style>
-  header {
-    text-align: center;
-    background: url('http://kickpunchcreative.com/wp-content/uploads/2015/06/mockwebsite.jpg');
-    background-size: cover;
-    color: white;
-  }
-  a {
-    color: white;
-  }
+---
+layout: default
+---
 
-}
-img {
-  margin: 40px 0px 0px 0px;
-}
-</style>
-</head>
+<div class="home">
 
-<header>
-<img src="http://kickpunchcreative.com/wp-content/uploads/2015/06/jeannieme.png">
-<h1>jeannie's code log</h1>
-</header>
-  
-  
-<body>
-<center>  {{ content }} </center>
-</body>
+  <h1 class="page-heading">Posts</h1>
 
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-</html>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
