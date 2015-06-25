@@ -29,7 +29,7 @@ def all
   end
 {% endhighlight %}
 
-The <i>all method</i>is a general Class method. It is stored in my module, DatabaseClassMethods, which I can use with any of my Classes to extract data from SQL. This method returns each row's attribute's values defined in the table columns. <b>Since Ruby doesn't have a table data structure, we've asked SQL to return the data as Hashes within a Hash. The Hash of each row includes the key (column name) and the corresponding value for each row. The second part of method then iterates over the Hash of data and stores the data into an Array of Objects. </b>
+The <i>all method</i> is a general Class method. It is stored in my module, DatabaseClassMethods, which I can use with any of my Classes to extract data from SQL. This method returns each row's attribute's values defined in the table columns. <b>Since Ruby doesn't have a table data structure, we've asked SQL to return the data as Hashes within a Hash. The Hash of each row includes the key (column name) and the corresponding value for each row. The second part of method then iterates over the Hash of data and stores the data into an Array of Objects. </b>
 
 
 
