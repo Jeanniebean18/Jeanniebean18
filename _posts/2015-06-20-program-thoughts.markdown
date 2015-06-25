@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Program Thoughts"
-date:   2015-06-20 18:58:19
+date:   2015-06-22 18:58:19
 categories: ruby sql
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ORM"
-date:   2015-06-20 18:58:19
+date:   2015-06-24 18:58:19
 categories: ruby sql
 ---
 
