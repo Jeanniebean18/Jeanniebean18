@@ -4,13 +4,11 @@ title:  "My ORM"
 date:   2015-06-24 18:58:19
 categories: ruby sql
 ---
-
-## My ORM
-#### What is an ORM?
+### What is an ORM?
 An ORM, or Object-relational mapping is a programming technique for converting data between incompatible type systems in object-oriented programming languages. In our case, we are using ORM to bridge the gap between Ruby and SQL database. ORM has sort of a mantra that it lives by, CRUD. Create, Read, Update or Destory the information. 
 
-### Retreiving information with ORM
-Ruby methods are created to call information from the database. Information can be manipulated by Ruby in several ways. Calling all information from a table or selecting one row, or selecting one value from an attribute of a row. We can also decide how we want that information brought back to us. Typically we asked it to return hashes, which then we can convert to objects for better readability for our programs. 
+### Retrieving Information with ORM
+Ruby methods are created to call information from the database. Calling all information from a table, selecting one row, or selecting one value from an particular attribute of a row are all ways we can use ORM to retrieve information from SQL. We can also decide how we want that information brought back to us in Ruby. Typically we ask it to return Hashes, which then we can convert to objects for better readability for our programs. 
 
 <b>For Example, my method below details how I retrieve all rows from a specific table.</b>
 

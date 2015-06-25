@@ -1,7 +1,7 @@
 # Site settings
 title: Jeannie's Clog (Code Blog)
 email: jeannie@kickpunchcreative.com
-description: Jeannie is Awesome.
+description: Hi! I’m Jeannie. I'm currently enrolled in Omaha Code School learning to become a Junior Developer with an emphasis on Ruby. 
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
