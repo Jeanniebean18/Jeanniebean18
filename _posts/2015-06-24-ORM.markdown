@@ -1,22 +1,38 @@
 ---
 layout: post
-title:  "ORM"
+title:  "My ORM"
 date:   2015-06-24 18:58:19
 categories: ruby sql
 ---
 
-## New Program thoughts.
-We have three animals at our house and I am horrible at remembering when the last time 
-we put frontline on them or when we last got them groomed. I’d like to create program 
-that tracks all of my animals events (medicine, vet, grooming). Often, our 
-animal events are done to one or multiple of our animals the same day, and also, many animals 
-have several animal events done to them in a year. The ideal functionality in future 
-iterations would have the user pick the animal event and the animals involved and it records a 
-time stamp for that day, instead of them having to enter a date, and also pick an 
-increment of when they should have this event next. It would then send a push notification to 
-them when the specific or multiple animals next event should be done. 
- 
-The one to many relationship is the user (me) has several animals. 
- 
-The many to many relationship is that the animal has many animal events 
-throughout the year, and each event could have many animals involved. 
+## My ORM
+#### What is an ORM?
+An ORM, or Object-relational mapping is a programming technique for converting data between incompatible type systems in object-oriented programming languages. In our case, we are using ORM to bridge the gap between Ruby and SQL database. ORM has sort of a mantra that it lives by, CRUD. Create, Read, Update or Destory the information. 
+
+### Retreiving information with ORM
+Ruby methods are created to call information from the database. Information can be manipulated by Ruby in several ways. Calling all information from a table or selecting one row, or selecting one value from an attribute of a row. We can also decide how we want that information brought back to us. Typically we asked it to return hashes, which then we can convert to objects for better readability for our programs. 
+
+<b>For Example, my method below details how I retrieve all rows from a specific table.</b>
+
+{% highlight ruby %}
+def all
+    
+    table_name = self.to_s.pluralize.underscore
+    
+    results = CONNECTION.execute("SELECT * FROM #{table_name}")
+
+    results_as_objects = []
+    
+    results.each do |result_hash|
+      results_as_objects << self.new(result_hash)
+    end
+    
+    return results_as_objects
+  end
+{% endhighlight %}
+
+The <i>all method</i>is a general Class method. It is stored in my module, DatabaseClassMethods, which I can use with any of my Classes to extract data from SQL. This method returns each row's attribute's values defined in the table columns. <b>Since Ruby doesn't have a table data structure, we've asked SQL to return the data as Hashes within a Hash. The Hash of each row includes the key (column name) and the corresponding value for each row. The second part of method then iterates over the Hash of data and stores the data into an Array of Objects. </b>
+
+
+
+
