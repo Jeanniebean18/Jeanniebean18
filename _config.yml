@@ -1,7 +1,7 @@
 # Site settings
 title: Jeannie's Clog (Code Blog)
 email: jeannie@kickpunchcreative.com
-description: 
+description: Jeannie is Awesome.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
