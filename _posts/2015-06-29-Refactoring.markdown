@@ -7,4 +7,4 @@ categories: ruby sql
 
 
 
-<object width="600" height="600" data="http://shemeansbusiness.me/jeannie-refactor-code.swf"></object>
+<object width="800" height="800" data="http://shemeansbusiness.me/jeannie-refactor-code.swf"></object>
