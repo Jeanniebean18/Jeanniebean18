@@ -6,13 +6,25 @@ categories: ruby sql
 ---
 
 <style>
-#object {margin-right: auto;
-margin-left: auto;
-max-width: 600px;
-min-width: 200px;
-}
+
+	.videoWrapper {
+	    position: relative;
+	    padding-bottom: 56.25%;
+	    height: 0;
+	}
+
+	.videoWrapper iframe,
+	.videoWrapper embed,
+	.videoWrapper object {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    left: 0;
+	    top: 0;
+	}
+
 </style>
-<div id="object">
+<div class="videoWrapper">
 <object width="800" height="800" data="http://shemeansbusiness.me/jeannie-refactor-code.swf">
   </object>
 </div>
