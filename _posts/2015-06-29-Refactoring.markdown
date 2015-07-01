@@ -13,7 +13,7 @@ categories: ruby sql
 	    height: 0;
 	}
 
-	.videoWrapper iframe,
+	.videoWrapper object,
 	.videoWrapper embed,
 	.videoWrapper object {
 	    position: absolute;
